@@ -11,6 +11,33 @@ define("SITE", [
     "root" => "https://localhost/codigoaberto/t1"
 ]);
 
+/**
+ * SOCIAL CONFIG
+ */
+ define("SOCIAL", [
+     "facebook_page" => "FernandoCarvalho",
+     "facebook_author" => "FernandoCarvalho",
+     "facebook_appId" => "",
+     "twitter_creator" => "@ndo_carvalho",
+     "twitter_site" => "@ndo_carvalho"
+ ]);
+
+/**
+* MAIL CONNECT
+*/
+define("MAIL", []);
+
+/**
+* SOCIAL LOGIN: FACEBOOK
+*/
+define("FACEBOOK_LOGIN", []);
+
+/**
+* SOCIAL LOGIN
+*/
+define("GOOGLE", []);
+
+
 /** SITE minify
 **/
 IF ($_SERVER["SERVER_NAME"] == "localhost") {
