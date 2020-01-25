@@ -8,19 +8,25 @@ define("SITE", [
     "desc" => "Aprenda a construir uma aplicação MVC",
     "domain" => "localauth.com",
     "locale" => "pt_BR",
-    "root" => "https://localhost/codigoAbertoPhp/t1"
+    "root" => "https://localhost/codigoabertophp/t1/"
 ]);
 
 /**
  * SOCIAL CONFIG
  */
  define("SOCIAL", [
-     "facebook_page" => "FernandoCarvalho",
-     "facebook_author" => "FernandoCarvalho",
+     "facebook_page" => "ndocarvalho",
+     "facebook_author" => "ndocarvalho",
      "facebook_appId" => "",
      "twitter_creator" => "@ndo_carvalho",
      "twitter_site" => "@ndo_carvalho"
  ]);
+
+ /** SITE minify
+ **/
+ IF ($_SERVER["SERVER_NAME"] == "localhost") {
+     require __DIR__."/Minify.php";
+ }
 
 /**
 * MAIL CONNECT
@@ -38,11 +44,6 @@ define("FACEBOOK_LOGIN", []);
 define("GOOGLE", []);
 
 
-/** SITE minify
-**/
-IF ($_SERVER["SERVER_NAME"] == "localhost") {
-    require __DIR__."/Minify.php";
-}
 
 /** DATABASE CONNECT
 **/
@@ -51,7 +52,7 @@ define("DATA_LAYER_CONFIG", [
     "driver" => "mysql",
     "host" => "localhost",
     "port" => "3306",
-    "dbname" => "datalayer_example",
+    "dbname" => "auth",
     "username" => "root",
     "passwd" => "",
     "options" => [
