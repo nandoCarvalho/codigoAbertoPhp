@@ -8,7 +8,7 @@ define("SITE", [
     "desc" => "Aprenda a construir uma aplicação MVC",
     "domain" => "localauth.com",
     "locale" => "pt_BR",
-    "root" => "https://localhost/codigoaberto/t1"
+    "root" => "https://localhost/codigoAbertoPhp/t1"
 ]);
 
 /**
