@@ -8,9 +8,9 @@ class Web extends Controller
     {
         parent::__construct($router);
         /*Tratamento se eu já estiver logado, nao posso deixar que nennhuma das paginas dentro do controller seja acessada.*/
-        if (!empty($_SESSION["user"])) {
-            $this->router->redirect("app.home");
-        }
+        // if (!empty($_SESSION["user"])) {
+        //     $this->router->redirect("app.home");
+        // }
     }
 
     public function login(): void
